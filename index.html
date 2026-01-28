@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Multitecnic SpA | Servicios Técnicos Profesionales</title>
+
+<script>
+const originalTitle = "Multitecnic SpA | Servicios Técnicos Profesionales";
+let animatedTitle = "👋 Cotiza tu servicio en Multitecnic ";
+let interval = null;
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    if (!interval) {
+      interval = setInterval(() => {
+        animatedTitle = animatedTitle.substring(1) + animatedTitle.charAt(0);
+        document.title = animatedTitle;
+      }, 120); // velocidad ideal
+    }
+  } else {
+    clearInterval(interval);
+    interval = null;
+    document.title = originalTitle;
+  }
+});
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="img/favicon.png">
+<link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="hero-overlay">
+        <h1>MULTITECNIC SpA</h1>
+        <p>
+            Servicios técnicos profesionales para hogares, comercios y empresas<br>
+            Electricidad · Aire acondicionado · Cámaras de seguridad<br>
+          
+        </p>
+
+        <a href="https://wa.me/56987649524?text=Hola,%20quiero%20cotizar%20un%20servicio.
+"
+           class="btn-whatsapp"
+           target="_blank"
+           rel="noopener noreferrer">
+           Cotizar por WhatsApp
+        </a>
+       
+
+
+    </div>
+</header>
+
+<section class="services">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="services-grid">
+
+        <div class="service-box">
+            <h3>Electricidad</h3>
+            <p>
+                Instalaciones eléctricas domiciliarias y comerciales,
+                reparación de fallas y normalización eléctrica.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>Aire Acondicionado</h3>
+            <p>
+                Instalación, mantención y limpieza de equipos de aire
+                acondicionado para hogares y negocios.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>Cámaras de Seguridad</h3>
+            <p>
+                Instalación de cámaras de seguridad para viviendas,
+                locales comerciales y oficinas.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>Mantenciones</h3>
+            <p>
+                Mantención preventiva y correctiva para asegurar el
+                correcto funcionamiento de tus instalaciones.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="why-us">
+    <h2>¿Por qué elegir MULTITECNIC?</h2>
+
+    <div class="why-us-grid">
+        <div class="why-card">
+            <span>⚡</span>
+            <h3>Experiencia y confianza</h3>
+            <p>
+                Contamos con experiencia en servicios eléctricos,
+                aire acondicionado y cámaras de seguridad,
+                entregando soluciones seguras y duraderas.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <span>⏱️</span>
+            <h3>Atención rápida y directa</h3>
+            <p>
+                Comunicación directa por WhatsApp,
+                sin intermediarios y con respuesta rápida
+                para coordinar su trabajo.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <span>🛠️</span>
+            <h3>Trabajo responsable</h3>
+            <p>
+                Realizamos cada servicio con compromiso,
+                orden y responsabilidad,
+                cuidando su hogar o negocio.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <h2>Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            📍 ¿En qué zonas trabajan?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Trabajamos principalmente en Santiago. Fuera de Santiago, previa coordinación.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            💬 ¿Cómo puedo cotizar un servicio?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Puedes escribirnos directamente por WhatsApp para una atención rápida y directa.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            ⚡ ¿Qué servicios realizan?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Electricidad, aire acondicionado y cámaras de seguridad para hogares y negocios.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            🏠 ¿Realizan visitas a domicilio?
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Sí, previa coordinación por WhatsApp.</p>
+        </div>
+    </div>
+
+    <a href="https://wa.me/56987649524"
+       class="faq-whatsapp-btn"
+       target="_blank"
+       rel="noopener noreferrer">
+       📲 ¿Tienes otra duda? Escríbenos por WhatsApp
+    </a>
+</section>
+
+
+
+
+<section class="contact">
+    <h2>Contacto</h2>
+
+    <div class="contact-box">
+        <p>
+            <strong>📍 Zona de atención</strong><br>
+            El Bosque y todo Santiago.<br>
+            Fuera de Santiago, previa coordinación.
+        </p>
+
+        <p>
+            <strong>🕘 Horario de atención</strong><br>
+            Lunes a sábado, 09:00 a 19:00
+        </p>
+
+        <p>
+            <strong>📞 WhatsApp</strong><br>
+            <a href="https://wa.me/56987649524" target="_blank" rel="noopener noreferrer">
+                +56987649524
+            </a>
+        </p>
+
+        <p>
+            <strong>✉️ Email</strong><br>
+            <a href="mailto:diaz.pablo.25@gmail.com">
+                multitecnic.contacto@gmail.com
+            </a>
+        </p>
+
+        <a href="https://wa.me/56987649524"
+           class="contact-btn"
+           target="_blank"
+           rel="noopener noreferrer">
+           Escribir por WhatsApp
+        </a>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <p>MULTITECNIC SpA © 2026</p>
+    <p>Servicios Eléctricos • Aire Acondicionado • Cámaras de Seguridad</p>
+
+    <div class="social-icons">
+    <a href="https://www.instagram.com/multitecnic_spa/" class="instagram" target="_blank" aria-label="Instagram">
+        <img src="img/instagram.svg" alt="Instagram">
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61586979519843" class="facebook" target="_blank" aria-label="Facebook">
+        <img src="img/facebook.svg" alt="Facebook">
+    </a>
+
+    <a href="https://www.tiktok.com/@multitecnic_spa" class="tiktok" target="_blank" aria-label="TikTok">
+        <img src="img/tiktok.svg" alt="TikTok">
+    </a>
+</div>
+
+</footer>
+
+<!-- BOTÓN WHATSAPP FLOTANTE -->
+<a href="https://wa.me/56987649524"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Escribir por WhatsApp">
+
+    <img src="img/whatsapp.png" alt="WhatsApp">
+</a>
+
+
+
+
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const item = button.parentElement;
+
+        // Cerrar otros
+        document.querySelectorAll('.faq-item').forEach(i => {
+            if (i !== item) i.classList.remove('active');
+        });
+
+        // Toggle actual
+        item.classList.toggle('active');
+    });
+});
+</script>
+
+
+</body>
+</html>

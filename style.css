@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    background-color: #222;
+    height: 90vh;
+     background-image: url("img/portada.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-overlay {
+    background-color: rgba(0,0,0,0.65);
+    color: white;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+/* ===============================
+   BOTÓN WHATSAPP HERO (COTIZAR)
+================================ */
+
+.hero .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 34px;
+    background-color: #25D366;
+    color: #ffffff !important;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: 35px;
+    text-decoration: none !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background-color 0.25s ease;
+}
+
+/* Hover */
+.hero .btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+}
+
+/* Estados del link */
+.hero .btn-whatsapp:visited,
+.hero .btn-whatsapp:active,
+.hero .btn-whatsapp:focus {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Animación opcional */
+.hero .btn-whatsapp {
+    animation: pulseHeroWhatsapp 3s infinite;
+}
+
+@keyframes pulseHeroWhatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 16px rgba(37,211,102,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,0);
+    }
+}
+
+
+
+
+
+/* =========================
+   SECCIÓN SERVICIOS
+   ========================= */
+
+
+
+/* Sección general */
+.services {
+    padding: 60px 20px;
+    background-color: #ffffff; /* fondo blanco */
+    text-align: center;
+}
+
+/* Título */
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+/* Grid de servicios */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Caja individual */
+.service-box {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Hover profesional */
+.service-box:hover {
+    background-color: #ffffff;
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Texto */
+.service-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #111;
+}
+
+.service-box p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+
+
+
+/* ===============================
+   CONTACTO
+================================ */
+
+.contact {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+/* Caja de contacto */
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 35px 40px;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* Texto */
+.contact-box p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.contact-box strong {
+    color: #111;
+}
+
+/* Links normales (email / número) */
+.contact-box a {
+    color: #0a7cff;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Botón WhatsApp */
+.contact-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    padding: 14px 28px;
+    background-color: #25D366;
+    color: #ffffff !important;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover del botón */
+.contact-btn:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+    text-decoration: none !important;
+}
+
+/* Evita cambios de color por estado del link */
+.contact-btn:visited,
+.contact-btn:active,
+.contact-btn:focus {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .contact-box {
+        padding: 30px 25px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
+    transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.15);
+}
+
+.social-icons a.instagram:hover img {
+    filter: invert(48%) sepia(79%) saturate(500%) hue-rotate(300deg);
+}
+
+.social-icons a.facebook:hover img {
+    filter: invert(32%) sepia(98%) saturate(600%) hue-rotate(190deg);
+}
+
+.social-icons a.tiktok:hover img {
+    filter: invert(90%) sepia(10%) saturate(200%) hue-rotate(180deg);
+}
+
+
+
+/* =========================
+   BOTÓN FLOTANTE WHATSAPP
+   ========================= */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    z-index: 999;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float img {
+    width: 34px;
+    height: 34px;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+}
+
+
+
+/* =========================
+   SECCIÓN POR QUÉ ELEGIRNOS
+   ========================= */
+
+.why-us {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.why-card {
+    background-color: #f9f9f9;
+    padding: 30px 25px;
+    border-radius: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.why-card span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.why-card p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+/* botón WhatsApp */
+.whatsapp-float {
+  ...
+}
+
+/* ajuste celular */
+@media (max-width: 600px) {
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+
+/* =========================
+   PREGUNTAS FRECUENTES
+   ========================= */
+
+.faq {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    background-color: #f9f9f9;
+    padding: 25px 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* =========================
+   FAQ DESPLEGABLE
+   ========================= */
+
+.faq {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto 18px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+/* Pregunta */
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Icono + */
+.faq-icon {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+/* Respuesta */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: max-height 0.35s ease;
+}
+
+.faq-answer p {
+    padding: 0 24px 20px 24px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Abierto */
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* Botón WhatsApp */
+.faq-whatsapp-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 34px;
+    background-color: #25D366;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 35px;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.faq-whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+}
