@@ -535,3 +535,41 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 10px 24px rgba(0,0,0,0.4);
 }
+
+
+
+/* =========================
+   AJUSTE PORTADA SOLO MÓVIL
+   ========================= */
+@media (max-width: 480px) {
+
+  .hero {
+    height: 85vh; /* evita que se coma toda la pantalla */
+    background-position: center top; /* enfoca mejor la imagen */
+  }
+
+  .hero-content {
+    padding: 0 18px;
+    transform: translateY(-10px);
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+}
+
+
+
+/* =========================
+   VERSIÓN TABLET
+   ========================= */
+@media (min-width: 481px) and (max-width: 900px) {
+
+  /* ajustes SOLO tablet */
+}
